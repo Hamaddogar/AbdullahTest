@@ -1,0 +1,73 @@
+#laoding{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    animation:  linear 10s myanimation;
+}
+
+@keyframes myanimation{
+from{  width: 100px;
+    height: 10px;
+    background-color: red;}
+to{
+    width: 1200px;
+    height: 10px;
+    background-color: black;
+}
+
+}
+
+#main{
+ display: inline-flex;
+
+
+}
+#div1{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 20px;
+    animation: linear 10s myrotate;
+}
+#div2{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    margin: 20px;
+    animation: linear 10s myrotate;
+
+}#div3{
+    width: 300px;
+    height: 300px;
+    background-color:green;
+    animation: linear 10s myrotate;
+    margin: 20px;
+
+}
+
+ @keyframes myrotate{
+
+    0%{
+        transform: rotate(90deg);
+    }
+    25%{
+        transform: rotate(180deg);
+     
+
+    }
+    50%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+   /* from{
+       transform: rotate(90deg);
+   }
+    to{
+       transform: rotate(360deg);
+
+
+    } */
+
+ }
